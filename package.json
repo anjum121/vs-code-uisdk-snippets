@@ -1,15 +1,16 @@
 {
     "name": "AccelyaUISDK",
     "description": "Code snippets for UI SDK",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "displayName": "UI SDK code snippets",
-    "publisher": "Anjum",
+    "publisher": "anjum",
+    "icon": "images/logo.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/anjum121/vs-code-uisdk-snippets"
     },
     "engines": {
-        "vscode": "^1.27.0"
+        "vscode": "^0.10.0"
     },
     "categories": [
         "Snippets"

@@ -4,6 +4,12 @@
 
 This extension contains code snippets for UI SDK in HTML & Typescript/javascript syntax for [Vs Code][code] editor (supports both JavaScript and TypeScript).
 
+----
+
+![alt text](images/ezgif.com-optimize.gif "Demo Image")
+
+----
+
 ## Installation
 
 In order to install an extension you need to launch the Command Pallete (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
