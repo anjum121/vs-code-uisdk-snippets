@@ -1,9 +1,13 @@
 {
-    "name": "mcf",
-    "displayName": "Accelya UI SDK",
-    "description": "UI SDK code snippets",
+    "name": "AccelyaUISDK",
+    "description": "Code snippets for UI SDK",
     "version": "0.0.1",
-    "publisher": "anjum",
+    "displayName": "UI SDK code snippets",
+    "publisher": "Anjum",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/anjum121/vs-code-uisdk-snippets"
+    },
     "engines": {
         "vscode": "^1.27.0"
     },
