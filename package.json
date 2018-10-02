@@ -1,0 +1,29 @@
+{
+    "name": "mcf",
+    "displayName": "Accelya UI SDK",
+    "description": "UI SDK code snippets",
+    "version": "0.0.1",
+    "publisher": "anjum",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/snippets.html.json"
+            }
+        ]
+    }
+}

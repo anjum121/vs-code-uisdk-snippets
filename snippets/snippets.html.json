@@ -1,0 +1,506 @@
+{
+  "accelya-sdk-header": {
+    "prefix": "mcf:header",
+    "body": [
+      " <accelya-sdk-header ",
+      "    [menuItems]=\"menuItems\"",
+      "    [appsMenuConfig]=\"appsMenu\"",
+      "    [searchMenuConfig]=\"searchItems\"",
+      "    [userMenuConfig]='userMenu'",
+      "    (onMenuItemClicked)=\"handleMenuItemClicked(event)\"",
+      "    (onCloseSearch)=\"handleSearchClosed(event)\"",
+      "    (onSearchSubmit)=\"handleSearchSubmit(event)\"",
+      "    (onUserMenuItemClicked)=\"handleUserMenuItemClick(event)\"",
+      "    (onAppMenuItemClicked)=\"handleAppMenuItemClick(event)\">",
+      "</accelya-sdk-header>"
+    ],
+    "description": "accelya-sdk-header"
+  },
+  "Alert": {
+    "prefix": "mcf:alert",
+    "body": [
+      "<mcf-button",
+      "   mcfclass=\"-state-secondary -button-full\"",
+      "   id=\"show-alert-button\"",
+      "   label=\"Click To Alert\" (click)='onShowAlert()'>",
+      "</mcf-button>"
+    ],
+    "description": "Alert"
+  },
+  "Autocomplete": {
+    "prefix": "mcf:autocomplete",
+    "body": [
+      "<mcf-autocomplete [localdata]=\"autocompleteData\"",
+      "      (onAutocompleteFocus)=\"onAutocompleteFocus($event)\"",
+      "      (onAutocompleteBlur)=\"onAutocompleteBlur($event)\"",
+      "      (onAutocompleteChange)=\"onAutocompleteChange($event)\"",
+      "      id=\"autocompletePreselected\" datafield=\"data\"",
+      "      [(value)]=\"autocompleteData.data[0]\"",
+      "      titlefield=\"name\"",
+      "      minlength=\"2\"",
+      "      searchfields=\"name\"",
+      "      placeholder=\"Please select a country\"",
+      "      pause=\"1000\"",
+      "      match-class=\"autocomplete-highlight\">",
+      "</mcf-autocomplete>"
+    ],
+    "description": "Autocomplete"
+  },
+  "Button": {
+    "prefix": "mcf:button",
+    "body": [
+      "<mcf-button ",
+      "  mcfclass=\"-state-primary\" ",
+      "  label=\"Primary\"",
+      "  (click)=\"onButtonClick($event)\">",
+      "</mcf-button>"
+    ],
+    "description": "Button"
+  },
+  "ButtonGroup": {
+    "prefix": "mcf:buttongroup",
+    "body": [
+      "<mcf-buttons-group [config]=\"configButtons\" (onClick)=\"onClickGroupBtn($event)\"></mcf-buttons-group>"
+    ],
+    "description": "ButtonGroup"
+  },
+  "Breadcrumb": {
+    "prefix": "mcf:breadcrumb",
+    "body": [
+      "<mcf-breadcrumb",
+      "  id=\"breadcrumb\"",
+      "  [links]=\"myLinks\"",
+      "  [mcfclass]=\"'sample'\"",
+      "  [separatorIcon]=\"'acf_icon_show_offer_arrow'\"",
+      "  (click)=\"onClick($event)\"",
+      ">",
+      "</mcf-breadcrumb>",
+      ""
+    ],
+    "description": "Breadcrumb"
+  },
+  "Carousel": {
+    "prefix": "mcf:carousel",
+    "body": [
+      "<mcf-carousel [options]=\"options\" (click)=\"onClickCarousel($event)\"></mcf-carousel>"
+    ],
+    "description": "Carousel"
+  },
+  "choice": {
+    "prefix": "mcf:choice:radio",
+    "body": [
+      "<mcf-choice [options]='chOptions'></mcf-choice>"
+    ],
+    "description": "choice"
+  },
+  "choiceCheckbox": {
+    "prefix": "mcf:choice:checkbox",
+    "body": [
+      "<mcf-choice",
+      "      type=\"inline\"",
+      "      multiple=\"true\"",
+      "      direction=\"vertical\"",
+      "      [options]='vertical01'",
+      "    ></mcf-choice>"
+    ],
+    "description": "choiceCheckbox"
+  },
+  "choiceDropdowns": {
+    "prefix": "mcf:choice:dropdowns",
+    "body": [
+      "<mcf-choice",
+      "      type=\"dropdown\"",
+      "      placeholder=\"Small size dropdown\"",
+      "      [mcfclass]=\"'-small'\"",
+      "      [options]='chOptions'",
+      "    ></mcf-choice>"
+    ],
+    "description": "choiceDropdowns"
+  },
+  "choiceToggle": {
+    "prefix": "mcf:choice:toggle",
+    "body": [
+      "<mcf-choice",
+      "      [values]=\"myValueToggle\"",
+      "      [showLabels]='true'",
+      "      [type]=\"'toggle'\"",
+      "      [options]=\"toggleOptions\"",
+      "    ></mcf-choice>"
+    ],
+    "description": "choiceToggle"
+  },
+  "chartBoxPlot": {
+    "prefix": "mcf:chart:boxPlot",
+    "body": [
+      "<mcf-chart (onClick)=\"onClickHandler($event)\" [data]=\"chartData\" [options]=\"chartOptions\"></mcf-chart>"
+    ],
+    "description": "chartBoxPlot"
+  },
+  "chartCandleStick": {
+    "prefix": "mcf:chart:candlestick",
+    "body": [
+      "<mcf-chart (onClick)=\"onClickHandler($event)\" [data]=\"chartData\" [options]=\"chartOptions\"></mcf-chart>"
+    ],
+    "description": "chartCandleStick"
+  },
+  "chartCumulativeLine": {
+    "prefix": "mcf:chart:cumulativeLine",
+    "body": [
+      "<mcf-chart (onClick)=\"onClickHandler($event)\" [data]=\"chartData\" [options]=\"chartOptions\"></mcf-chart>"
+    ],
+    "description": "chartCumulativeLine"
+  },
+  "chartDiscreteBar": {
+    "prefix": "mcf:chart:discreteBar",
+    "body": [
+      "<mcf-chart (onClick)=\"onClickHandler($event)\" [data]=\"chartData\" [options]=\"chartOptions\"></mcf-chart>"
+    ],
+    "description": "chartDiscreteBar"
+  },
+  "chartDiscreteBarDrillDown": {
+    "prefix": "mcf:chart:discreteBarDrillDown",
+    "body": [
+      "<mcf-chart (onClick)=\"onClickHandler($event)\" [data]=\"chartData\" [options]=\"chartOptions\"></mcf-chart>"
+    ],
+    "description": "chartDiscreteBarDrillDown"
+  },
+  "chartDonut": {
+    "prefix": "mcf:chart:donut",
+    "body": [
+      "<mcf-chart (onClick)=\"onClickHandler($event)\" [data]=\"chartData\" [options]=\"chartOptions\"></mcf-chart>"
+    ],
+    "description": "chartDonut"
+  },
+  "chartHistoricalBar": {
+    "prefix": "mcf:chart:historicalBar",
+    "body": [
+      "<mcf-chart (onClick)=\"onClickHandler($event)\" [data]=\"chartData\" [options]=\"chartOptions\"></mcf-chart>"
+    ],
+    "description": "chartHistoricalBar"
+  },
+  "chartLine": {
+    "prefix": "mcf:chart:line",
+    "body": [
+      "<mcf-chart (onClick)=\"onClickHandler($event)\" [data]=\"chartData\" [options]=\"chartOptions\"></mcf-chart>"
+    ],
+    "description": "chartLine"
+  },
+  "chartPie": {
+    "prefix": "mcf:chart:pie",
+    "body": [
+      "<mcf-chart (onClick)=\"onClickHandler($event)\" [data]=\"chartData\" [options]=\"chartOptions\"></mcf-chart>"
+    ],
+    "description": "chartPie"
+  },
+  "datatable": {
+    "prefix": "mcf:datatable",
+    "body": [
+      "<mcf-datatable",
+      "  [searchenabled]=\"false\"",
+      "  [height]=\"300\"",
+      "  [searchstringminlength]=\"1\"",
+      "  [data]='data'",
+      "  [columns]='columnsTable1'>",
+      "</mcf-datatable>"
+    ],
+    "description": "Datatable"
+  },
+  "datatable-remote": {
+    "prefix": "mcf:datatable:remote",
+    "body": [
+      "<mcf-datatable",
+      "  [searchenabled]='true'",
+      "  [searchstringminlength]='1'",
+      "  [columns]='randomUserColumns'",
+      "  [enablePaging]='true'",
+      "  remoteresponsefield='results'",
+      "  [remotedatasource]='getRemoteData'",
+      "  [remoteresponsepaging]='remoteResponsePaging'",
+      "></mcf-datatable>"
+    ],
+    "description": "datatable-remote"
+  },
+  "dateAndTime": {
+    "prefix": "mcf:dateAndTime",
+    "body": [
+      "<mcf-datetime",
+      "    id=\"date01\"",
+      "    [options]=\"myOptions\"",
+      "    placeholder=\"Please select date\"",
+      "></mcf-datetime>"
+    ],
+    "description": "dateAndTime"
+  },
+  "draggable": {
+    "prefix": "mcf:draggable",
+    "body": [
+      "<mcf-draggable",
+      "    (dragStart)=\"onDragStart($event)\"",
+      "    (onDrop)=\"onDrop($event)\"",
+      "    [dndElementsBySelector]=\"dndElementsBySelector\"",
+      "  ></mcf-draggable>",
+      "  <mcf-draggable",
+      "    (dragStart)=\"onDragStart($event)\"",
+      "    (onDrop)=\"onDrop($event)\"",
+      "    [newDndElements]=\"newDndElements\"",
+      "  ></mcf-draggable>",
+      "  <div class=\"test-draggable\" style=\"background: #000; width: 30px; height: 30px; margin: 5px;\" id=\"drag-id1\"></div>",
+      "  <div class=\"test-draggable\" style=\"background: #000; width: 30px; height: 30px; margin: 5px;\" id=\"drag-id2\"></div>",
+      "  <div class=\"test-draggable\" style=\"background: #000; width: 30px; height: 30px; margin: 5px;\" id=\"drag-id3\"></div>",
+      "  <div id=\"test-droppable\" style=\"background: #CCC; width: 309px; height: 309px;\"></div>"
+    ],
+    "description": "draggable"
+  },
+  "ellipsis": {
+    "prefix": "mcf:ellipsis",
+    "body": [
+      "<mcf-ellipsis-menu [config]=\"ellipsisMenuConfig\"></mcf-ellipsis-menu>"
+    ],
+    "description": "ellipsis"
+  },
+  "fileupload": {
+    "prefix": "mcf:fileupload",
+    "body": [
+      " <mcf-file-upload></mcf-file-upload>"
+    ],
+    "description": "fileupload"
+  },
+  "footer": {
+    "prefix": "mcf:footer",
+    "body": [
+      "<mcf-footer",
+      "  id=\"mcf-footer\" [termsAndConditions]=\"termsAndConditions\" [privacyPolicy]=\"privacyPolicy\">",
+      "</mcf-footer>"
+    ],
+    "description": "footer"
+  },
+  "flightSelector": {
+    "prefix": "mcf:flightSelector",
+    "body": [
+      "<mcf-flight-selector",
+      "     selectbuttontext=\"Select\"",
+      "     icon=\"acf_icon_date_picker\"",
+      "     [mcfclass]=\"mcfClass\"",
+      "     [onSelectclear]=\"onSelectclear\"",
+      "     [validateFlightsuffix]=\"validateFlightsuffix\"",
+      "     [validateFlightNumber]=\"validateFlightNumber\"",
+      "     [validateFlightCode]=\"validateFlightCode\">",
+      "</mcf-flight-selector>"
+    ],
+    "description": "flightSelector"
+  },
+  "input": {
+    "prefix": "mcf:input",
+    "body": [
+      "<mcf-input",
+      "        [placeholder]=\"'Two way binding'\"",
+      "        [value]=\"twoWayBinding\"",
+      "        [(ngModel)]=\"twoWayBindingObj.name\"",
+      "        [label]=\"'Two way binding'\"",
+      "></mcf-input>"
+    ],
+    "description": "input"
+  },
+  "login": {
+    "prefix": "mcf:login",
+    "body": [
+      "<mcf-login",
+      "        id=\"mcf-login\"",
+      "        [usernamelabel]=\"'LOGIN.USERNAME' | mcfi18n\"",
+      "        [passwordlabel]=\"'LOGIN.PASSWORD' | mcfi18n\"",
+      "        [usernameplaceholder]=\"'LOGIN.USERNAMEPLACEHOLDER' | mcfi18n\"",
+      "        [passwordplaceholder]=\"'LOGIN.PASSWORDPLACEHOLDER' | mcfi18n\"",
+      "        [cantAccess]=\"'LOGIN.CANTACCESSYOURACCOUNT' | mcfi18n\"",
+      "        [remembermelabel]=\"'LOGIN.REMEMBERME' | mcfi18n\"",
+      "        [buttonlabel]=\"'LOGIN.LOGIN' | mcfi18n\"",
+      "        [closeenabled]=\"false\"",
+      "        [loginInModal]=\"loginWrapper\"",
+      "        [isShown]=\"isShown\"",
+      "        [configuration]=\"{ encodingType: 1 }\"",
+      "      ></mcf-login>"
+    ],
+    "description": "login"
+  },
+  "lov": {
+    "prefix": "mcf:lov",
+    "body": [
+      "<mcf-lov-dialog",
+      "  label=\"Countrie List\"",
+      "  [isVisible]=\"isCheckboxesVisible\"",
+      "  placeholder=\"select more countries\"",
+      "  taginput=\"true\"",
+      "  (onClose)=\"onCloseCheckboxes()\"",
+      "  (onOpen)=\"onOpenCheckboxes()\"",
+      "  [options]=\"multipleCheckboxes\"",
+      "  [popuptype]=\"'checkboxes'\"",
+      "  [searchenabled]=\"true\"",
+      "  [searchPlaceholder]=\"'Type to search'\"",
+      "  [checkboxCols]=\"4\"",
+      "  [value]=\"checkboxesValue\"",
+      "  (valueChange)=\"onCheckboxesChange($event)\"",
+      "  (onCancel)=\"onCancel($event)\"",
+      "  (onApply)=\"onApply($event)\"",
+      "></mcf-lov-dialog>"
+    ],
+    "description": "lov"
+  },
+  "map": {
+    "prefix": "mcf:map",
+    "body": [
+      "<mcf-map",
+      "  [popUps] = \"true\"",
+      "  [vehicleMarkers]=\"vehicleMarkersOpenedPopUps\"",
+      "  [enableMaskLayer] = \"false\"",
+      "  [width]=\"'1000px'\"",
+      "  [height]=\"'600px'\"",
+      "  [enableZoom]=\"true\"",
+      "  [zoom]=\"1.5\"",
+      "  (click)=\"onMapClick($event)\"",
+      "></mcf-map>"
+    ],
+    "description": "map"
+  },
+  "model": {
+    "prefix": "mcf:model",
+    "body": [
+      "<mcf-button mcfclass=\"-state-secondary\" label=\"Open Modal\"",
+      "            (click)=\"onButtonClick($event)\"></mcf-button>",
+      "<mcf-modal #theModal",
+      "  [openAnimation]=\"'fadeIn'\"",
+      "  [closeAnimation]=\"'fadeOut'\"",
+      "  [closeonoutsideclick]=\"false\"",
+      "  content=\"Sample Modal\" isfootervisible=\"true\"",
+      "  ></mcf-modal>"
+    ],
+    "description": "model"
+  },
+  "prompt": {
+    "prefix": "mcf:prompt",
+    "body": [
+      "<mcf-button",
+      "     label=\"Show Info Prompt\"",
+      "     id=\"show-info-prompt-button\"",
+      "     mcfclass=\"-state-secondary -button-full\"",
+      "     (click)=\"onShowInfoPrompt()\">",
+      "</mcf-button>"
+    ],
+    "description": "prompt"
+  },
+  "spinner": {
+    "prefix": "mcf:spinner",
+    "body": [
+      "<mcf-button mcfclass=\"-state-secondary\" label=\"Show Spinner\"",
+      "(click)=\"click($event)\">",
+      "</mcf-button>"
+    ],
+    "description": "spinner"
+  },
+  "steps": {
+    "prefix": "mcf:steps",
+    "body": [
+      "",
+      "<mcf-select",
+      "        [items]=\"steps\"",
+      "        [bindLabel]=\"'title'\"",
+      "        [bindValue]=\"'route'\"",
+      "        (change)=\"onStepChange($event)\"",
+      "        [(ngModel)]=\"currentStep\"></mcf-select>",
+      "<mcf-steps [steps]=\"steps\" [currentStep]=\"currentStep\"></mcf-steps>"
+    ],
+    "description": "steps"
+  },
+  "taginput": {
+    "prefix": "mcf:taginput",
+    "body": [
+      "<mcf-tags-input",
+      "    [(value)]=\"tagsValue\"",
+      "    (onTags)=\"onChange($event)\"",
+      "    placeholder = \"Add new tag\"",
+      "    [clearAllTag]=\"true\"",
+      "    (onClearAll)=\"handleClearAll($event)\"",
+      "></mcf-tags-input>"
+    ],
+    "description": "taginput"
+  },
+  "tab": {
+    "prefix": "mcf:tab",
+    "body": [
+      "<mcf-tab [tabTitle]=\"'Demo'\" leftIcon=\"acf_icon_date_picker\" >",
+      "  TAB1 ",
+      "</mcf-tab>"
+    ],
+    "description": "tab"
+  },
+  "valueSelector": {
+    "prefix": "mcf:valueSelector",
+    "body": [
+      "<mcf-value-selector [multiCustomValidationRules]=\"myValidation\"",
+      "[config]=\"valueConfig\"",
+      "[(value)]='val'",
+      "(onChange)=\"onValueChange($event)\"",
+      "(onBlur)=\"onBlur($event)\" ></mcf-value-selector>"
+    ],
+    "description": "valueSelector"
+  },
+  "Stepslider": {
+    "prefix": "mcf:stepslider",
+    "body": [
+      "<mcf-step-slider></mcf-step-slider>"
+    ],
+    "description": "Stepslider"
+  },
+  "lineIndicator": {
+    "prefix": "mcf:lineIndicator",
+    "body": [
+      "<mcf-line-indicator [config]=\"config\"></mcf-line-indicator>"
+    ],
+    "description": "lineIndicator"
+  },
+  "select": {
+    "prefix": "mcf:select",
+    "body": [
+      "<mcf-select [items]=\"cars\"",
+      "[bindLabel]=\"'name'\"",
+      "[bindValue]=\"'id'\"",
+      "[closeOnSelect]=\"hasProperty('closeOnSelect')\"",
+      "[clearable]=\"hasProperty('clearable')\"",
+      "[markFirst]=\"hasProperty('markFirst')\"",
+      "[hideSelected]=\"hasProperty('hideSelected')\"",
+      "[multiple]=\"hasProperty('multiple')\"",
+      "(change)=\"onChange($event)\">",
+      "</mcf-select>"
+    ],
+    "description": "select"
+  },
+  "timerange": {
+    "prefix": "mcf:timerange",
+    "body": [
+      "<mcf-time-range [config]=\"timeRangeConfigure\" [data]=\"flightList\" (onChange)=\"changeHandler($event)\"></mcf-time-range>"
+    ],
+    "description": "timerange"
+  },
+  "journey": {
+    "prefix": "mcf:journey",
+    "body": [
+      "<mcf-journey [itineraries]=\"itineraries\" [journeyConfig]=\"detailedJourneyConfig\"></mcf-journey>"
+    ],
+    "description": "journey"
+  },
+  "slider": {
+    "prefix": "mcf:slider",
+    "body": [
+      "<mcf-slider from=\"20\" to=\"45\" (onChange)=\"onChange($event)\"></mcf-slider>"
+    ],
+    "description": "slider"
+  },
+  "pagination": {
+    "prefix": "mcf:pagination",
+    "body": [
+      "<ul>",
+      "<li *ngFor=\"let item of collection | paginate: paginationConfig\">{{ item }}</li>",
+      "</ul>",
+      "<mcf-pagination [id]=\"'pagination1'\" [config]=\"paginationConfig\"></mcf-pagination>"
+    ],
+    "description": "pagination"
+  }
+}
