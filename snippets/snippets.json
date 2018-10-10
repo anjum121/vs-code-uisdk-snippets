@@ -1,5 +1,5 @@
 {
-  "accelya-sdk-header-ts": {
+  "Header-ts": {
     "prefix": "mcf:header",
     "body": [
       "import { IMenuItem, ISearchConfig, IApplicationsAction, IUserMenuConfig } from 'mcf-interfaces/accelya-sdk-header';",
@@ -147,7 +147,7 @@
       "  }",
       "}"
     ],
-    "description": "accelya-sdk-header-ts"
+    "description": "Header-ts"
   },
   "Alert-ts": {
     "prefix": "mcf:alert",
@@ -209,11 +209,7 @@
   },
   "Button-ts": {
     "prefix": "mcf:button",
-    "body": [
-      "onButtonClick(e) {",
-      "    console.log('onButtonClick', e);",
-      "}"
-    ],
+    "body": ["onButtonClick(e) {", "    console.log('onButtonClick', e);", "}"],
     "description": "Button-ts"
   },
   "ButtonGroup-ts": {
@@ -298,7 +294,6 @@
   "Carousel-ts": {
     "prefix": "mcf:carousel",
     "body": [
-      
       " options = {",
       "    virtual: {",
       "      slides: ['<img src=\"https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg\">',",
@@ -1443,7 +1438,7 @@
       "                        }",
       "                      ]",
       "                    }",
-    "                  ], options: { title: 'February\'s first week' }",
+      "                  ], options: { title: 'February's first week' }",
       "                }",
       "              },",
       "              {",
@@ -1483,7 +1478,7 @@
       "                        }",
       "                      ]",
       "                    }",
-    "                  ], options: { title: 'February\'s second week' }",
+      "                  ], options: { title: 'February's second week' }",
       "                }",
       "              },",
       "              {",
@@ -1523,7 +1518,7 @@
       "                        }",
       "                      ]",
       "                    }",
-    "                  ], options: { title: 'February\'s thrid week' }",
+      "                  ], options: { title: 'February's thrid week' }",
       "                }",
       "              },",
       "              {",
@@ -1563,7 +1558,7 @@
       "                        }",
       "                      ]",
       "                    }",
-    "                  ], options: { title: 'February\'s fourth week' }",
+      "                  ], options: { title: 'February's fourth week' }",
       "                }",
       "              },",
       "              {",
@@ -1587,7 +1582,7 @@
       "                        }",
       "                      ]",
       "                    }",
-    "                  ], options: { title: 'February\'s fifth week' }",
+      "                  ], options: { title: 'February's fifth week' }",
       "                }",
       "              }",
       "            ]",
@@ -2689,5 +2684,49 @@
       "}"
     ],
     "description": "pagination-ts"
+  },
+  "fab-ts": {
+    "prefix": "mcf:fab:ts",
+    "body": [
+      "",
+      "fabConfig4 = {",
+      "  icon: 'acf_icon_close_2',",
+      "  backgroundColor: 'red',",
+      "  textColor: '#fff',",
+      "  onClick: this.fabOnClick,",
+      "  position: 'top-right',",
+      "  showItemsAsText: false,",
+      "  isMenuText: false,",
+      "  showMenuText: 'My Menu',",
+      "  showMenuIcon: 'acf_icon_Hamburger_menu',",
+      "  listPosition: 'left',",
+      "};",
+      "",
+      "fabData = [{",
+      "  icon: 'acf_icon_copy',",
+      "  color: 'red',",
+      "  onClickItem: this.fabOnClickItem1,",
+      "  title: 'Save this'",
+      "},",
+      "{",
+      "  icon: 'acf_icon_home',",
+      "  color: 'green',",
+      "  onClickItem: this.fabOnClickItem2,",
+      "  title: 'Delete this'",
+      "}, {",
+      "  icon: 'acf_icon_email',",
+      "  color: 'blue',",
+      "  onClickItem: this.fabOnClickItem2,",
+      "  title: 'Delete this'",
+      "},",
+      "{",
+      "  icon: 'acf_icon_bluetooth',",
+      "  color: 'orange',",
+      "  onClickItem: this.fabOnClickItem2,",
+      "  title: 'Do Nothing'",
+      "}]",
+      ""
+    ],
+    "description": "fab-ts"
   }
 }

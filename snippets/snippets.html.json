@@ -1,20 +1,19 @@
 {
-  "accelya-sdk-header": {
+  "header": {
     "prefix": "mcf:header",
     "body": [
-      " <accelya-sdk-header ",
-      "    [menuItems]=\"menuItems\"",
-      "    [appsMenuConfig]=\"appsMenu\"",
-      "    [searchMenuConfig]=\"searchItems\"",
-      "    [userMenuConfig]='userMenu'",
-      "    (onMenuItemClicked)=\"handleMenuItemClicked(event)\"",
-      "    (onCloseSearch)=\"handleSearchClosed(event)\"",
-      "    (onSearchSubmit)=\"handleSearchSubmit(event)\"",
-      "    (onUserMenuItemClicked)=\"handleUserMenuItemClick(event)\"",
-      "    (onAppMenuItemClicked)=\"handleAppMenuItemClick(event)\">",
-      "</accelya-sdk-header>"
+      " <mcf-header [menuItems]=\"menuItems\"",
+      "   [appsMenuConfig]=\"appsMenu\"",
+      "   [searchMenuConfig]=\"searchItems\"",
+      "   [userMenuConfig]='userMenu'",
+      "   (onMenuItemClicked)=\"handleMenuItemClicked($event)\"",
+      "   (onCloseSearch)=\"handleSearchClosed($event)\"",
+      "   (onSearchSubmit)=\"handleSearchSubmit($event)\"",
+      "   (onUserMenuItemClicked)=\"handleUserMenuItemClick($event)\"",
+      "   (onAppMenuItemClicked)=\"handleAppMenuItemClick($event)\">",
+      "</mcf-header>"
     ],
-    "description": "accelya-sdk-header"
+    "description": "header"
   },
   "Alert": {
     "prefix": "mcf:alert",
@@ -88,9 +87,7 @@
   },
   "choice": {
     "prefix": "mcf:choice:radio",
-    "body": [
-      "<mcf-choice [options]='chOptions'></mcf-choice>"
-    ],
+    "body": ["<mcf-choice [options]='chOptions'></mcf-choice>"],
     "description": "choice"
   },
   "choiceCheckbox": {
@@ -260,9 +257,7 @@
   },
   "fileupload": {
     "prefix": "mcf:fileupload",
-    "body": [
-      " <mcf-file-upload></mcf-file-upload>"
-    ],
+    "body": [" <mcf-file-upload></mcf-file-upload>"],
     "description": "fileupload"
   },
   "footer": {
@@ -444,16 +439,12 @@
   },
   "Stepslider": {
     "prefix": "mcf:stepslider",
-    "body": [
-      "<mcf-step-slider></mcf-step-slider>"
-    ],
+    "body": ["<mcf-step-slider></mcf-step-slider>"],
     "description": "Stepslider"
   },
   "lineIndicator": {
     "prefix": "mcf:lineIndicator",
-    "body": [
-      "<mcf-line-indicator [config]=\"config\"></mcf-line-indicator>"
-    ],
+    "body": ["<mcf-line-indicator [config]=\"config\"></mcf-line-indicator>"],
     "description": "lineIndicator"
   },
   "select": {
@@ -502,5 +493,12 @@
       "<mcf-pagination [id]=\"'pagination1'\" [config]=\"paginationConfig\"></mcf-pagination>"
     ],
     "description": "pagination"
+  },
+  "fab-ts": {
+    "prefix": "mcf:fab",
+    "body": [
+      "<mcf-fab [fabConfig]='fabConfig4' [fabData]='fabData'></mcf-fab>"
+    ],
+    "description": "fab-ts"
   }
 }
